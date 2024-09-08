@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #1abc9c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Destination Hero Section */
+.destination-hero {
+    background-image: url('https://thumbs.dreamstime.com/b/travel-to-paris-europe-tour-woman-suitcase-near-eiffel-tower-france-113677380.jpg'); /* Replace with a travel-related image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.destination-hero .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.destination-hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.destination-hero p {
+    font-size: 18px;
+}
+
+/* Destination List Section */
+.destination-list {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.destination-list h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.destinations-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.destination-card {
+    max-width: 350px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.destination-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destination-info p {
+    margin-bottom: 15px;
+}
+
+.destination-info a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.destination-info a:hover {
+    text-decoration: underline;
+}
+
+/* Destination Highlights Section */
+.destination-highlights {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.highlights-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlight {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    color: #666;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .destinations-container, .highlights-container, .gallery-container {
+        flex-direction: column;
+    }
+
+    .destination-card, .highlight {
+        max-width: 100%;
+    }
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+

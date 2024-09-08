@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #1abc9c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Service Hero Section */
+.service-hero {
+    background-image: url('https://www.expedia.com/stories/wp-content/uploads/2021/09/Solo-Travel-Paris-Header.jpg'); /* Replace with a travel-related image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.service-hero .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.service-hero p {
+    font-size: 18px;
+}
+
+/* Services Overview Section */
+.services-overview {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-overview h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    max-width: 350px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.service-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    margin-bottom: 15px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.why-card {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #666;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container, .why-container {
+        flex-direction: column;
+    }
+
+    .service-card, .why-card {
+        max-width: 100%;
+    }
+}
